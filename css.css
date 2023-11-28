@@ -1,0 +1,29 @@
+h6 {
+    font-size: 14px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+body {
+    text-align: center;
+    padding: 20px;
+
+}
+
+form {
+    padding-top: 32px;
+    text-align: center;
+    max-width: 300px;
+    margin: auto;
+}
+
+.corpo{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
