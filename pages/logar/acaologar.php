@@ -10,7 +10,7 @@ $acao = isset($_POST['acao'])?$_POST['acao']:'';
     require_once('../../classes/usuario.class.php');
 
     if ($acao == 'salvar'){
-
+        echo "a";
     try{        
         $Nusuario = new Usuario($idusuario, $nome, $email, $senha, $matricula, $idtipousuario);
         if ($idusuario > 0){
