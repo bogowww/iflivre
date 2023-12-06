@@ -9,7 +9,7 @@
             </div> <!--logo -->
             <div class="nave_header">
                 <a href=" <?php echo URL_BASE."index.php" ?>" class="ativacao">HOME</a>
-                <a href=" <?php echo URL_BASE."logar/login.php" ?>"class="ativacao"><?php 
+                <a href=" <?php echo URL_BASE."pages/logar/login.php" ?>"class="ativacao"><?php 
                 if (isset($_SESSION['id'])){
                     echo "PAGINA PRINCIPAL";
                 }else{

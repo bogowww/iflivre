@@ -1,6 +1,6 @@
 <?php
-    require_once ('../config/config.inc.php');
-    require_once ('../classes/database.class.php');
+    require_once ('../../config/config.inc.php');
+    require_once ('../../classes/database.class.php');
 
  class Usuario{
     private $idusuario;
