@@ -18,30 +18,26 @@
             <img src="https://img.icons8.com/material-sharp/24/000000/search.png" alt="Ícone de Lupa">
         </button>
     </div>
-
     <div class="product-container">
+    <?php 
+        require_once('../../classes/produto.class.php');
+
+        $showproduto = new Produto(1,1,1,1,1,1);
+        $variavel = $showproduto -> listar();
+
+        foreach ($variavel as $variavelchave) {
+            
+            echo "<div class='product'>
+                <a href='showproduto.php'>
+                    <img src='../../img/cheese-frango.webp' alt=''>
+                    <h3>". $variavelchave['titulo'] ."</h3>
+                    <h3>". $variavelchave['descricao'] ."</h3>
+                </a>
+            </div>";
+        }
+
+    ?>
         <!-- Exemplo de produto -->
-        <div class="product">
-            <a href="#">
-                <img src="link_da_sua_imagem1.jpg" alt="Produto 1">
-                <h3>Produto 1</h3>
-            </a>
-        </div>
-
-        <div class="product">
-            <a href="#">
-                <img src="link_da_sua_imagem2.jpg" alt="Produto 2">
-                <h3>Produto 2</h3>
-            </a>
-        </div>
-
-        <div class="product">
-            <a href="#">
-                <img src="link_da_sua_imagem3.jpg" alt="Produto 3">
-                <h3>Produto 3</h3>
-            </a>
-        </div>
-
         <!-- Adicione mais produtos conforme necessário -->
     </div>
 </div>

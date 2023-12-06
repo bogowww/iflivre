@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fff;
-    box-shadow: 0 0 10px rgba(148, 103, 103, 0.1);
+    /*box-shadow: 0 0 10px rgba(148, 103, 103, 0.1);*/
 }
 
 .container {

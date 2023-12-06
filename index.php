@@ -24,7 +24,7 @@
                 <p>Caso não tenha se cadastrado, <a href="#">FAZER CADASTRO</a></p>
                 </div>
                 <img class="gosei" src="img/imagemgrupo.png" alt="Imagem"/>
-            </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>
