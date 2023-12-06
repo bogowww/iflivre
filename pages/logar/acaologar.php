@@ -7,10 +7,10 @@ $matricula = isset($_POST['matricula'])?$_POST['matricula']:1;
 $senha = isset($_POST['senha'])?$_POST['senha']:1;
 $acao = isset($_POST['acao'])?$_POST['acao']:'';
     
-    require_once('../classes/usuario.class.php');
+    require_once('../../classes/usuario.class.php');
 
     if ($acao == 'salvar'){
-
+        echo "a";
     try{        
         $Nusuario = new Usuario($idusuario, $nome, $email, $senha, $matricula, $idtipousuario);
         if ($idusuario > 0){
