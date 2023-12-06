@@ -8,6 +8,7 @@
  </head>
 <body>
 
+
 <h1>Informações do Produto</h1>
 <form method="post" action="acaoproduto.php">
     <div class="form-row">
