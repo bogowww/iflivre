@@ -8,9 +8,23 @@
     <title>IFLIVRE</title>
 </head>
 <body>
-    <?php 
-        include('teamplate/header.php');  
-    ?>
-
-</body>
+    <div class="container">
+        <div class="if">
+            <h4>IFLIVRE</h4>
+        </div>
+        <div class="p1">
+            <h2 class="aa">Vista o mundo de solidariedade, doe roupas e faça a</h2>
+            <h2>diferença!</h2>
+        </div>
+        <div class="bu">
+        <a href="pages/logar/login.php"><button type="button" class="btn btn-dark">Entrar</button></a>
+        </div>
+        <div class="lina">
+                <div class="pz">
+                <p>Caso não tenha se cadastrado, <a href="#">FAZER CADASTRO</a></p>
+                </div>
+                <img class="gosei" src="img/imagemgrupo.png" alt="Imagem"/>
+            </div>
+        </div>
+    </body>
 </html>

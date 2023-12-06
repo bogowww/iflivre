@@ -9,6 +9,9 @@
 <body>
 
 <?php
+    require_once('../../config/config.inc.php');
+    include('../../teamplate/navbar.php');
+
 if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_FILES["imagem"])) {
     $titulo = $_POST["titulo"];
     $descricao = $_POST["descricao"];
