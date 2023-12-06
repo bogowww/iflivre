@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php 
-        include('teamplate/header.php');  
+        include('teamplate/header.php');
     ?>
 
 </body>
