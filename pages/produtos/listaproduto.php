@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="../../css/produto.css">
 </head>
 <body>
+    <?php
+        require_once('../../config/config.inc.php');
+        include('../../teamplate/navbar.php');
+    ?>
 <div class="container">
     <h1>Lista de Produtos</h1>
 

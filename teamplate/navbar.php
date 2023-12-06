@@ -16,10 +16,10 @@
   <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
     <ul class="navbar-nav">
         <li class="nav-item active">
-            <a class="nav-link" href="#"><b> Anunciar</b></a>
+            <a class="nav-link" href="<?php echo URL_BASE . "pages/produtos/cadastroproduto.php" ?>"><b> Anunciar</b></a>
         </li>
     </ul>
-    <a class="navbar-brand mx-auto" href="#">IFLIVRE</a>
+    <a class="navbar-brand mx-auto" href="<?php echo URL_BASE . "index.php" ?>">IFLIVRE</a>
     <ul class="navbar-nav">
       <li class="nav-item">
         <a class="nav-link" href="#">
@@ -32,8 +32,13 @@
         </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="<?php echo URL_BASE . "pages/produtos/listaproduto.php" ?>">
           <img src="<?php echo URL_BASE."img/loja.png";?>" alt="Loja" width="30" height="30">
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="<?php echo URL_BASE . "pages/logar/acaologar.php?acao=logout" ?>">
+          <img src="<?php echo URL_BASE."img/20278.png";?>" alt="logout" width="30" height="30">
         </a>
       </li>
     </ul>

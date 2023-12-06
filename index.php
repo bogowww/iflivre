@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <?php 
+    session_start();
+    ?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
@@ -17,7 +20,12 @@
             <h2>diferença!</h2>
         </div>
         <div class="bu">
-        <a href="pages/logar/login.php"><button type="button" class="btn btn-dark">Entrar</button></a>
+            <?php 
+                if (isset($_SESSION['logado'])) {
+                    echo "<a href='pages/produtos/listaproduto.php'><button type='button' class='btn btn-dark'>Entrar</button></a>";
+                }else
+                    echo "<a href='pages/logar/login.php'><button type='button' class='btn btn-dark'>Entrar</button></a>"
+            ?>
         </div>
         <div class="lina">
                 <div class="pz">

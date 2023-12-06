@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="../../css/cadastro.css">
  </head>
 <body>
-
+    <?php 
+        require_once('../../config/config.inc.php');
+        include('../../teamplate/navbar.php');
+    ?>
 
 <h1>Informações do Produto</h1>
 <form method="post" action="acaoproduto.php">

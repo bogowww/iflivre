@@ -21,7 +21,7 @@ $acao = isset($_POST['acao'])?$_POST['acao']:'';
         else{
             echo "aaa";
             $Prods -> salvar();
-        header('location:cadastro.php'); 
+        header('location:listaproduto.php'); 
         }  
     }catch(Exception $e){
         echo "Erro ao inserir: ".$e->getMessage();

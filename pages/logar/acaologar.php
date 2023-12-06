@@ -6,6 +6,7 @@ $email = isset($_POST['email'])?$_POST['email']:1;
 $matricula = isset($_POST['matricula'])?$_POST['matricula']:1;
 $senha = isset($_POST['senha'])?$_POST['senha']:1;
 $acao = isset($_POST['acao'])?$_POST['acao']:'';
+$acao2 = isset($_GET['acao'])?$_GET['acao']:'';
     
     require_once('../../classes/usuario.class.php');
 
@@ -43,11 +44,17 @@ if ($acao == 'logar'){
         $Nusuario = new Usuario($idusuario, $nome, $email, $senha, $matricula, $idtipousuario);
         $consulta = $Nusuario -> listar(2, $email, $senha);
         foreach ($consulta as $pesquisa) {
-            echo $pesquisa['nome'];
+            session_start();
+            $_SESSION['logado'] = true;
+            header('location:../produtos/listaproduto.php');
         }  
     }catch(Exception $e){
         echo "Erro ao inserir: ".$e->getMessage();
     }
+}elseif ($acao2 == "logout") {
+    session_start();
+    session_destroy();
+    header('location:../../index.php');
 }
 
 ?>
