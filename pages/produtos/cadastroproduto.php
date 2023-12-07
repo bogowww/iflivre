@@ -12,7 +12,7 @@
         include('../../teamplate/navbar.php');
     ?>
 
-<h1>Informações do Produto</h1>
+<center><h1>Informações do Produto</h1></center>
 <form method="post" action="acaoproduto.php">
     <div class="form-row">
         <div class="form-column">

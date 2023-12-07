@@ -29,7 +29,7 @@
         </div>
         <div class="lina">
                 <div class="pz">
-                <p>Caso não tenha se cadastrado, <a href="#">FAZER CADASTRO</a></p>
+                <p>Caso não tenha se cadastrado, <a href="pages/logar/cadastro.php">FAZER CADASTRO</a></p>
                 </div>
                 <img class="gosei" src="img/imagemgrupo.png" alt="Imagem"/>
         </div>
